@@ -11,7 +11,7 @@
 <main>
   <nav><a href="index.html">Home</a><a href="support.html">Support</a></nav>
   <h1>Privacy policy</h1>
-  <p class="muted">Last updated: 21 November 2026</p>
+  <p class="muted">Last updated: 23 November 2026</p>
 
   <p>Field Hockey is a game made by Andrew Tennison ("we"). This page tells you what data the game collects, why, where it is kept, and how to have it deleted. We keep it short and we collect as little as we can.</p>
 
@@ -39,7 +39,7 @@
     </tr>
     <tr>
       <td>Play sessions</td>
-      <td>For each match or practice run: mode, team size, teams, start and end time, play time, score and result. Also a log of the controls you pressed, so we can replay the game exactly.</td>
+      <td>For each match or practice run: mode, team size, teams, start and end time, play time, score, result and match level. Also a log of the controls you pressed, so we can replay the game exactly.</td>
       <td>To find bugs and to balance the game (for example, if a mode is too hard).</td>
     </tr>
     <tr>
@@ -52,6 +52,11 @@
       <td>Device type, app version and game version. If the game cannot reach our servers (for example, sign-in or a session upload fails), and you allowed analytics, we send a short error report: which step failed, the error code, and the first 200 characters of the error message. We remove ids, email addresses and IP addresses from the message before it is sent.</td>
       <td>To find bugs that happen only on some devices or versions.</td>
     </tr>
+    <tr>
+      <td>Feedback you send</td>
+      <td>If you use the Feedback button in the game, we store the message you type and the mood you pick (if any), with the game and app version, the platform (web or iOS), the screen you sent it from and the id of the play session that was open. We do not ask for your name or email; please do not put personal details in the message. It is stored with our database provider, Supabase (EU), linked to your anonymous account id, and deleted after 12 months or when your account is deleted.</td>
+      <td>We use feedback only to fix and improve the game.</td>
+    </tr>
   </table>
   <p>We do not collect your location, contacts, photos, or advertising id. The game has no ads and no real-money purchases.</p>
 
@@ -60,7 +65,7 @@
 
   <h2>Where it is stored, and who processes it</h2>
   <ul>
-    <li><strong>Supabase</strong> (servers in the EU): your account id, club, session summaries and play logs.</li>
+    <li><strong>Supabase</strong> (servers in the EU): your account id, club, session summaries, play logs and feedback you send.</li>
     <li><strong>PostHog</strong> (EU cloud): usage analytics, only if you consent.</li>
     <li><strong>Apple</strong>: if you test with TestFlight, Apple shares your tester email and any feedback you send with us, under Apple's own privacy policy.</li>
   </ul>
@@ -74,6 +79,7 @@
     <li>Account id, club and session summaries: until 12 months after your last play session, or until you ask us to delete them.</li>
     <li>Replay logs (the controls you pressed): 12 months from the session.</li>
     <li>Usage analytics (PostHog): 1 year.</li>
+    <li>Feedback: 12 months from when you sent it.</li>
   </ul>
   <p>If we stop the game, we delete all data.</p>
 
